@@ -1,5 +1,8 @@
 <?php
+date_default_timezone_set('America/Sao_Paulo');
+
 define('FILE_CITY', 'pacajus.txt');
+define('FILE_REVIEWS', 'reviews.txt');
 
 header("Content-Type: application/json"); // a aplicação retorna json
 header("Access-Control-Allow-Origin: *"); // vai aceitar requisições de todas origens
