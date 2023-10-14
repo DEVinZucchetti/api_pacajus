@@ -5,8 +5,9 @@ require_once 'utils.php';
 $method = $_SERVER['REQUEST_METHOD'];
 
 if ($method === 'POST') {
+    
     $body = getBody();
-
+    
     $name = sanitizeString($body->name);
     $contact = sanitizeString($body->contact);
     $opening_hours = sanitizeString($body->opening_hours);
